@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="BalckPage"></div>
+    <div class="QuestionerPage">
+        <div class="HeaderOfThePage">
+                <div class="BarScrole">
+                        <h1 style="color:white"><span class="ReponeVrai">0</span>/<span class="NumberQuestion">0</span></h1>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                          </div>
+                      </div>
+                </div>
+                <div class="Score">
+                    <h2 style="color:white">Score : </h2>
+                    <h2 style="color:white" class="scoreNumber">0</h2>
+                </div>
+        </div>
+        <div class="BodyPage">
+            <h1 class="Question" style="color:white"></h1>
+            <div class="Reponse">
+
+            </div>
+        </div>
+        <div class="LastBtN">
+            <button class="Logout">high score : <span class="HighScore">0</span> points</button>
+            <button class="Timer">Timer : <span class="TimerDownd">30</span>s</button>
+            <button class="Next">Next</button>
+        </div>
+    </div>
+    <div class="GamOver">
+            <h1>Game over</h1>
+            <div class="score">
+                <h2>Score : </h2>
+                <h2 class="scooreFinal"> 0 points</h2>
+            </div>
+            <h1 class="StatusFinl">Congratulations</h1>
+            <img class="Congratulation" src="./congrats-work.gif" alt="">
+            <img class="Loser" src="./loser.gif" alt="">
+            <div class="Name">
+                    <input type="text" placeholder="Name" class='NameUser'>
+            </div>
+            <button class="ValideScore">Valide score</button>
+            <button class="Restart">Restart</button>
+    </div>
+    <!-- <div class="ScoreWinn">
+            <h1>+ <span class="ScoreWinnPlus">60</span></h1>
+    </div> -->
+
+    <script src="./main.js"></script>
+
+</body>
+</html>

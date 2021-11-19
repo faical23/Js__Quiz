@@ -1,0 +1,227 @@
+{
+    "AllQuestion":[
+    {
+        "Question":"Which of the following system software resides in main memory always ?",
+        "Point":20,
+        "Reponse":[
+            {
+                "Reponse" : "Text editor",
+                "Status" :false
+            },
+            {
+                "Reponse" : "Assembler",
+                "Status" :true
+            },
+            {
+                "Reponse" : "Linker",
+                "Status" :false
+            },
+            {
+                "Reponse" : "Loader",
+                "Status" :false
+            }
+        ]
+    },
+    {
+        "Question":"Daisy chain is a device for ?",
+        "Point":40,
+        "Reponse":[
+            {
+                "Reponse" : "Interconnecting a number of devices to number of controllers                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "Connecting a number of devices to a controller                ",
+                "Status" :true
+            },
+            {
+                "Reponse" : "Connecting a number of controller to devices                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "All of above                ",
+                "Status" :false
+            }
+        ]
+    },
+    {
+        "Question":"Which of the following type of software should be used if you need to create,edit and print document  ?        ",
+        "Point":10,
+        "Reponse":[
+            {
+                "Reponse" : "Word processing                ",
+                "Status" :true
+            },
+            {
+                "Reponse" : "Spreadsheet                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "Desktop publishing                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "UNIX                ",
+                "Status" :false
+            }
+        ]
+    },
+    {
+        "Question":"Producer consumer problem can be solved using ?"  ,
+        "Point":20,
+        "Reponse":[
+            {
+                "Reponse" : "semaphores                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "event counters                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "monitors                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "all of above                ",
+                "Status" :true
+            }
+        ]
+    },
+    {
+        "Question":"What is bootstraping ?",
+        "Point":10,
+        "Reponse":[
+            {
+                "Reponse" : "A language interpreting other language program                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "A language compiling other language program                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "A language compile itself                ",
+                "Status" :true
+            },
+            {
+                "Reponse" : "All of above                ",
+                "Status" :false
+            }
+        ]
+    },
+    {
+         "Question":"Shell is the exclusive feature of ?",
+         "Point":20,
+         "Reponse":[
+             {
+                 "Reponse" : "UNIX",
+                 "Status" :true
+             },
+             {
+                 "Reponse" : "DOS",
+                 "Status" :false
+             },
+             {
+                 "Reponse" : "System software                 ",
+                 "Status" :false
+             },
+             {
+                 "Reponse" : "Application software                 ",
+                 "Status" :false
+             }
+         ]
+    } ,
+    {
+        "Question":"A program in execution is called ?       ",
+        "Point":30,
+        "Reponse":[
+            {
+                "Reponse" : "Process",
+                "Status" :true
+            },
+            {
+                "Reponse" : "Instruction                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "Procedure                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "Function",
+                "Status" :false
+            }
+        ]
+    }
+    ,
+    {
+        "Question":"Which of the following can be used as a criterion for classification of data structures used in language processing ?     ",
+        "Point":20,
+        "Reponse":[
+            {
+                "Reponse" : "nature of  a data structure                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "purpose of a data structure                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "lifetime of a data structure                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "all of the above                ",
+                "Status" :true
+            }
+        ]
+    }
+     ,
+    {
+        "Question":"A UNIX device driver is ?" ,
+        "Point":20,
+        "Reponse":[
+            {
+                "Reponse" : "Structured into two halves called top half and bottom half                ",
+                "Status" :true
+            },
+            {
+                "Reponse" : "Three equal partitions                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "Unstructured                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "None of the above                ",
+                "Status" :false
+            }
+        ]
+     }
+     ,
+    {
+        "Question":"Memory ?",
+        "Point":20,
+        "Reponse":[
+            {
+                "Reponse" : "is an device that performs a sequence of operations specified by instructions in memory          ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "is the device where information is stored                ",
+                "Status" :true
+            },
+            {
+                "Reponse" : "is a sequence of instructions                ",
+                "Status" :false
+            },
+            {
+                "Reponse" : "is a computational unit to perform specific functions                ",
+                "Status" :false
+            }
+        ]
+     }
+    ]
+}

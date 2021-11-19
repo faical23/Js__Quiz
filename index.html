@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="FirstPage">
+        <h1 class="Titre" style="color:white">QUIZ Programming !!!!</h1>
+        <div class="Score">
+                <h2 style="color:white">Score : </h2>
+                <h2 style="color:white" class="scoreNumber">0</h2>
+        </div>
+        <div class="Btns">
+            <button class="Start">Start</button>
+            <button class="Logout" style="width:400px;" >high score : <span class="HighScore">0</span> points</button>
+        </div>
+
+    </div>
+
+    <script>
+        let BtnStart = document.querySelector('.Start')
+        BtnStart.addEventListener('click', ()=>{
+            window.location.href = "./Questioner.html";
+        })
+        const GetheightScoreelemnt = () =>{
+            if(localStorage.getItem("OldScoreHave") == null){
+                localStorage.setItem("OldScoreHave", JSON.stringify(OldScoreHave))
+            }
+            else{
+                var GetHighScore = JSON.parse(localStorage.getItem("OldScoreHave"))
+                let HightScoreLocal = 0
+                let GetHighScoreName = ""
+                GetHighScore.forEach(element =>{
+                    if(HightScoreLocal <= element[0].ScoreUser){
+                        HightScoreLocal = element[0].ScoreUser
+                        GetHighScoreName = element[0].Name
+                    }
+                })
+                document.querySelector('.HighScore').innerHTML = `${GetHighScoreName} ${HightScoreLocal}`
+                console.log(HightScoreLocal)
+                console.log(GetHighScoreName )
+            }
+            
+        }
+        GetheightScoreelemnt()
+    </script>
+</body>
+</html>
