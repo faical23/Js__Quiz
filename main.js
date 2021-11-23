@@ -10,9 +10,6 @@ let Finish = false
 let TrueReponse = 0
 let OldScoreHave = []
 
-// local storage
-// localStorage.getItem("HighScore")  == null ? document.querySelector('.HighScore').innerHTML  = 0 
-// : document.querySelector('.HighScore').innerHTML = localStorage.getItem("HighScore");
 const GetheightScoreelemnt = () =>{
     if(localStorage.getItem("OldScoreHave") == null){
         localStorage.setItem("OldScoreHave", JSON.stringify(OldScoreHave))
@@ -22,9 +19,9 @@ const GetheightScoreelemnt = () =>{
         let HightScoreLocal = 0
         let GetHighScoreName = ""
         GetHighScore.forEach(element =>{
-            if(HightScoreLocal <= element[0].ScoreUser){
-                HightScoreLocal = element[0].ScoreUser
-                GetHighScoreName = element[0].Name
+            if(HightScoreLocal <= element.ScoreUser){
+                HightScoreLocal = element.ScoreUser
+                GetHighScoreName = element.Name
             }
         })
         document.querySelector('.HighScore').innerHTML = `${GetHighScoreName} ${HightScoreLocal}`
@@ -189,7 +186,7 @@ setInterval(IncurmentTime, 1000);
 
 document.querySelector('.ValideScore').addEventListener('click',() =>{
     let UserName = document.querySelector('.NameUser').value
-    var HighScore = [{Name:UserName,ScoreUser:score}];
+    var HighScore = {Name:UserName,ScoreUser:score};
     var OldScoreHave = JSON.parse(localStorage.getItem("OldScoreHave"));
     console.log(OldScoreHave)
     OldScoreHave.push(HighScore)
@@ -197,3 +194,7 @@ document.querySelector('.ValideScore').addEventListener('click',() =>{
 })
 
 
+document.querySelector('.Quettier').addEventListener('click', ()=>{
+    console.log("sdsds")
+    window.location.href = "./index.html";
+})

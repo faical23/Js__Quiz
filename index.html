@@ -16,7 +16,9 @@
         </div>
         <div class="Btns">
             <button class="Start">Start</button>
-            <button class="Logout" style="width:400px;" >high score : <span class="HighScore">0</span> points</button>
+            <button class="Logout">high score</button>
+        </div>
+        <div class="Best5scoore">
         </div>
 
     </div>
@@ -31,18 +33,45 @@
                 localStorage.setItem("OldScoreHave", JSON.stringify(OldScoreHave))
             }
             else{
-                var GetHighScore = JSON.parse(localStorage.getItem("OldScoreHave"))
-                let HightScoreLocal = 0
-                let GetHighScoreName = ""
-                GetHighScore.forEach(element =>{
-                    if(HightScoreLocal <= element[0].ScoreUser){
-                        HightScoreLocal = element[0].ScoreUser
-                        GetHighScoreName = element[0].Name
+                let GetHighScore = JSON.parse(localStorage.getItem("OldScoreHave"))
+                GetHighScore.sort(function (a, b) {
+                    return b.ScoreUser - a.ScoreUser;
+                });
+
+                for (let index = 0; index < GetHighScore.length; index++) {
+                    if(index < 5){
+                        if(index == 0){
+                            document.querySelector('.Best5scoore').innerHTML +=
+                                 `<h3>
+                                         ${GetHighScore[index].Name} : ${GetHighScore[index].ScoreUser}
+                                        <img src="./medaille_1.png" />
+                                 </h3>`
+                        }
+                        else if(index == 1){
+                            document.querySelector('.Best5scoore').innerHTML +=
+                                 `<h3>
+                                        ${GetHighScore[index].Name} : ${GetHighScore[index].ScoreUser}
+                                        <img src="./medaille_2.png" />
+                                 </h3>`
+                        }
+                        else if(index == 2){
+                            document.querySelector('.Best5scoore').innerHTML +=
+                                 `<h3>
+                                        ${GetHighScore[index].Name} : ${GetHighScore[index].ScoreUser}
+                                        <img src="./medaille_3.png" />
+                                 </h3>`
+                        }
+                        else{
+                            document.querySelector('.Best5scoore').innerHTML += `<h3>${GetHighScore[index].Name} : ${GetHighScore[index].ScoreUser}</h3>`
+                        }
+                        
+                        console.log(GetHighScore[index])
                     }
-                })
-                document.querySelector('.HighScore').innerHTML = `${GetHighScoreName} ${HightScoreLocal}`
-                console.log(HightScoreLocal)
-                console.log(GetHighScoreName )
+
+                    
+                }
+
+
             }
             
         }

@@ -7,7 +7,7 @@
     height: 100vh;
     .Titre{
         font-size:60px;
-        padding:100px;
+        padding-top:100px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .Score{
@@ -107,7 +107,7 @@
       }
 
   }
-  .Next,.Restart,.Logout,.Timer,.ValideScore{
+  .Next,.Restart,.Logout,.Timer,.ValideScore,.Quettier{
     display: block;
     border-radius:5px;
     font-size: 20px;
@@ -125,7 +125,7 @@
       background-color:white;
       color:black;
   }
-  .Logout{
+  .Logout,.Quettier{
       background-color:red;
       width: 300px;
   }
@@ -218,4 +218,15 @@
 body{
     background-color:#202124;
     user-select: none;
+}
+.Best5scoore{
+    h3{
+        background-color:white;
+        width:400px;
+        margin: 20px  auto;
+        padding:15px 0px;
+        border-radius:5px;
+        font-size:25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }
